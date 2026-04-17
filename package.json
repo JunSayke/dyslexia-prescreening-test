@@ -1,0 +1,42 @@
+{
+  "name": "@junsayke/dyslexia-prescreening-test",
+  "type": "module",
+  "version": "1.0.3",
+  "description": "A data-driven TypeScript scoring engine for the Adult Reading History Questionnaire (ARHQ).",
+  "author": "Antonio Ubaldo <antonio.junjr@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/junsayke/dyslexia-prescreening-test#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junsayke/dyslexia-prescreening-test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/junsayke/dyslexia-prescreening-test/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@typescript/native-preview": "7.0.0-dev.20260328.1",
+    "bumpp": "^11.0.1",
+    "tsdown": "^0.21.7",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.2"
+  }
+}
