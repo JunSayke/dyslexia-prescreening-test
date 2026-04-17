@@ -12,7 +12,9 @@ This library provides a mathematically strict, data-driven rules engine to evalu
 - **Data-Driven Architecture**: Questionnaires and demographic risk thresholds are decoupled into `TestProfile` objects.
 - **Strict Validation**: Fails fast on missing data or out-of-bounds answers to prevent falsely low clinical risk calculations.
 - **Fully Typed**: Built from the ground up with strict TypeScript contracts.
-- **Extensible**: Easily swap in custom risk thresholds, weighted questions, or newly researched test variants without changing engine logic.## Installation
+- **Extensible**: Easily swap in custom risk thresholds, weighted questions, or newly researched test variants without changing engine logic.
+
+## Installation
 
 ```bash
 
