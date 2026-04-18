@@ -16,9 +16,21 @@ This library provides a mathematically strict, data-driven rules engine to evalu
 
 ## Installation
 
+### Prerequisites (GitHub Packages)
+If you are pulling this package from the GitHub Package Registry, you must map the `@junsayke` scope to GitHub in your project's `.npmrc` file. 
+
+Create an `.npmrc` file in the root of your project and add the following line:
+
+```ini
+@junsayke:registry=[https://npm.pkg.github.com](https://npm.pkg.github.com)
+```
+
+Note: Depending on the repository's visibility settings, you may also need to authenticate via a GitHub Personal Access Token (PAT) with the read:packages scope.
+
+### Install
 ```bash
 
-npm install dyslexia-prescreening-test
+npm install @junsayke/dyslexia-prescreening-test
 
 ```
 
